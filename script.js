@@ -25,7 +25,7 @@ function addTask(e){
         task.append(text);
         const div = document.createElement("div");
         div.className = "action";
-        div.innerHTML = '<a href="#" class="delete-task">Del</a> <a href="#" class="finish-task">Done</a>';
+        div.innerHTML = '<a href="#" class="finish-task">Done</a> <a href="#" class="delete-task">Del</a>';
         task.append(div);
         tasks.append(task);
     }

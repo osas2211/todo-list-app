@@ -25,7 +25,7 @@ a {
     background-image: url("image/header-img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 28vh;
+    height: 23vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -86,26 +86,34 @@ input.btn{
 
 .collection{
     margin-top: 1rem;
+    box-sizing: content-box;
     list-style: none;
-    padding: 1rem;
+    padding-top: 1.5rem;
     border-top: 1px solid #614b4b28;
     border-bottom: 1px solid #614b4b28;
     border-radius: 8px;
 }
 
 .task {
-    width: 100%;
+    width: auto;
+    box-sizing: content-box;
     padding: 1rem;
     box-shadow: 1px 4px 15px  #00000044;
     margin-bottom: 1.5rem;
     border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+
+/*
 .delete-task, .finish-task{
     float: right;
     padding-left: 8px;
     text-transform: uppercase;
 }
+*/
 
 .delete-task {
     color: rgb(189, 13, 13);
