@@ -18,16 +18,19 @@ function addTask(e){
         alert("Please Input a Task")
     }
 
-    const task = document.createElement("li");
-    task.className = "task"
-    const text = document.createTextNode(taskInput.value);
-    task.append(text);
-    const div = document.createElement("div");
-    div.className = "action";
-    div.innerHTML = '<a href="#" class="delete-task">Del</a> <a href="#" class="finish-task">Done</a>';
-    task.append(div);
-    tasks.append(task);
-
+    else {
+        const task = document.createElement("li");
+        task.className = "task"
+        const text = document.createTextNode(taskInput.value);
+        task.append(text);
+        const div = document.createElement("div");
+        div.className = "action";
+        div.innerHTML = '<a href="#" class="delete-task">Del</a> <a href="#" class="finish-task">Done</a>';
+        task.append(div);
+        tasks.append(task);
+    }
+    
+    taskInput.value = "";
     e.preventDefault();
 };
 
