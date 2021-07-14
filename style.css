@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+    --theme-color:#68afb4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.header{
+    background-image: url("/image/header-img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 28vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.2rem;
+}
+
+.header h2{
+    letter-spacing: 12px;
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 100;
+}
+
+form.add-task{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form input:nth-child(1) {
+    padding: 0.8rem;
+    padding-left: 0;
+    border: none;
+    border-bottom: 1px solid #000000e1;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.btn{
+    margin-top: 2rem;
+    width: 9rem;
+    padding: 0.8rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 1px 1px 3px #000000;
+    color: #ffffff;
+    transition: 300ms ease-in-out;
+}
+
+input.btn{
+    background-color: var(--theme-color);
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+.task-collection{
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+.task-collection p{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.collection{
+    margin-top: 1rem;
+    list-style: none;
+    padding: 1rem;
+    border-top: 1px solid #614b4b28;
+    border-bottom: 1px solid #614b4b28;
+    border-radius: 8px;
+}
+
+.task {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 1px 4px 15px  #00000044;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+}
+
+.delete-task, .finish-task{
+    float: right;
+    padding-left: 8px;
+    text-transform: uppercase;
+}
+
+.delete-task {
+    color: rgb(189, 13, 13);
+}
+.finish-task{
+    color: rgb(18, 168, 18);
+}
+
+a#clear-tasks{
+    display: block;
+    background-color: #000000;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer{
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--theme-color);
+    color: #ffffff;
+}
+
+strike{
+    opacity: 0.5;
+}
+
+.action{
+    display: inline;
+}
