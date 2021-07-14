@@ -22,7 +22,7 @@ a {
 }
 
 .header{
-    background-image: url("/image/header-img1.jpg");
+    background-image: url("image/header-img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 28vh;
